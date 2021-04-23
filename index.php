@@ -14,13 +14,31 @@
 
     $nombre = "Camilo Espinosa";
     $apellido = "Camila Azuero";
-    echo "Hola $nombre";
-    echo "<br>";
-    echo "Hola ".$apellido;
-    echo "<br>";
-    $nombre = 100;
-    echo $nombre;
+    $numeroUno = 1;
+    $numeroDos = 2;
+    $resultado = $numeroUno*$numeroDos;
 
+
+
+    //echo $resultado."<br>";
+    echo "Hola $nombre"."<br>";
+    echo "Hola ".$apellido;
+    echo "<h1>Texto en h1</h1>";
+
+
+    $nombre = 100;
+
+    //una funcion gettype
+    echo gettype($nombre);
+
+    if (gettype($nombre) == "integer") {
+        echo "<br>La variable es un numero";
+        # code...
+    } else {
+        echo "<br> No es un numero";
+        # code...
+    }
+    
 ?>
 
 </body>
